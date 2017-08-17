@@ -3,20 +3,20 @@
 		private $descricao;
 		private $lances;
 
-		function __construct($descricao){
+		function __construct ($descricao) {
 			$this->descricao = $descricao;
 			$this->lances = array();			
 		}
 
-		public function propoe(Lance $lance){
+		public function propoe (Lance $lance) {
 			$this->lances[] = $lance;
 		}
 
-		public function get_descricao(){
+		public function get_descricao() {
 			return $this->descricao;
 		}
 
-		public function get_lances(){
+		public function get_lances() {
 			return $this->lances;
 		}
 	}
